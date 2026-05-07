@@ -1,0 +1,199 @@
+======================================
+ CUDA Benchmark (Raw Output)
+ Generated: Thu 07 May 2026 06:20:04 PM EDT
+======================================
+
+--------------------------------------
+Program : ./dot-matrices_cuda_stream
+Matrix  : A-500x500.dat
+--------------------------------------
+
+[P1000 ]
+matrix dimensions: 500 x 500; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.006563 seconds
+elapsed compute time   =   0.029729 seconds
+eigenvalue = -5.493120 found in 185 iterations
+
+[RTX3000]
+matrix dimensions: 500 x 500; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.001455 seconds
+elapsed compute time   =   0.026493 seconds
+eigenvalue = -5.493120 found in 185 iterations
+
+[RTXA5000 - ml partition]
+matrix dimensions: 500 x 500; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.005988 seconds
+elapsed compute time   =   0.018693 seconds
+eigenvalue = -5.493120 found in 185 iterations
+
+
+--------------------------------------
+Program : ./dot-matrices_cuda_stream
+Matrix  : A-1000x1000.dat
+--------------------------------------
+
+[P1000 ]
+matrix dimensions: 1000 x 1000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.015014 seconds
+elapsed compute time   =   0.048897 seconds
+eigenvalue = 5.490695 found in 193 iterations
+
+[RTX3000]
+matrix dimensions: 1000 x 1000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.003228 seconds
+elapsed compute time   =   0.052135 seconds
+eigenvalue = 5.490695 found in 193 iterations
+
+[RTXA5000 - ml partition]
+matrix dimensions: 1000 x 1000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.010771 seconds
+elapsed compute time   =   0.045640 seconds
+eigenvalue = 5.490695 found in 193 iterations
+
+
+--------------------------------------
+Program : ./dot-matrices_cuda_stream
+Matrix  : A-5000x5000.dat
+--------------------------------------
+
+[P1000 ]
+matrix dimensions: 5000 x 5000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.062524 seconds
+elapsed compute time   =   0.573546 seconds
+eigenvalue = 5.497701 found in 191 iterations
+
+[RTX3000]
+matrix dimensions: 5000 x 5000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.066355 seconds
+elapsed compute time   =   0.207629 seconds
+eigenvalue = 5.497701 found in 191 iterations
+
+[RTXA5000 - ml partition]
+matrix dimensions: 5000 x 5000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.112380 seconds
+elapsed compute time   =   0.187272 seconds
+eigenvalue = 5.497701 found in 191 iterations
+
+
+--------------------------------------
+Program : ./dot-matrices_cuda_stream
+Matrix  : A-10000x10000.dat
+--------------------------------------
+
+[P1000 ]
+matrix dimensions: 10000 x 10000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.337529 seconds
+elapsed compute time   =   2.071364 seconds
+eigenvalue = -5.499262 found in 184 iterations
+
+[RTX3000]
+matrix dimensions: 10000 x 10000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.264178 seconds
+elapsed compute time   =   0.573119 seconds
+eigenvalue = -5.499262 found in 184 iterations
+
+[RTXA5000 - ml partition]
+matrix dimensions: 10000 x 10000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.337766 seconds
+elapsed compute time   =   0.367236 seconds
+eigenvalue = -5.499262 found in 184 iterations
+
+
+--------------------------------------
+Program : ./dot-matrices_cuda
+Matrix  : A-500x500.dat
+--------------------------------------
+
+[P1000 ]
+matrix dimensions: 500 x 500; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.006526 seconds
+elapsed compute time   =   0.028549 seconds
+eigenvalue = -5.493120 found in 185 iterations
+
+[RTX3000]
+matrix dimensions: 500 x 500; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.006576 seconds
+elapsed compute time   =   0.031616 seconds
+eigenvalue = -5.493120 found in 185 iterations
+
+[RTXA5000 - ml partition]
+matrix dimensions: 500 x 500; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.006177 seconds
+elapsed compute time   =   0.017383 seconds
+eigenvalue = -5.493120 found in 185 iterations
+
+
+--------------------------------------
+Program : ./dot-matrices_cuda
+Matrix  : A-1000x1000.dat
+--------------------------------------
+
+[P1000 ]
+matrix dimensions: 1000 x 1000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.003169 seconds
+elapsed compute time   =   0.046905 seconds
+eigenvalue = 5.490695 found in 193 iterations
+
+[RTX3000]
+matrix dimensions: 1000 x 1000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.003097 seconds
+elapsed compute time   =   0.052043 seconds
+eigenvalue = 5.490695 found in 193 iterations
+
+[RTXA5000 - ml partition]
+matrix dimensions: 1000 x 1000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.012022 seconds
+elapsed compute time   =   0.043242 seconds
+eigenvalue = 5.490695 found in 193 iterations
+
+
+--------------------------------------
+Program : ./dot-matrices_cuda
+Matrix  : A-5000x5000.dat
+--------------------------------------
+
+[P1000 ]
+matrix dimensions: 5000 x 5000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.063890 seconds
+elapsed compute time   =   0.556047 seconds
+eigenvalue = 5.497701 found in 191 iterations
+
+[RTX3000]
+matrix dimensions: 5000 x 5000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.067761 seconds
+elapsed compute time   =   0.200928 seconds
+eigenvalue = 5.497701 found in 191 iterations
+
+[RTXA5000 - ml partition]
+matrix dimensions: 5000 x 5000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.111290 seconds
+elapsed compute time   =   0.177633 seconds
+eigenvalue = 5.497701 found in 191 iterations
+
+
+--------------------------------------
+Program : ./dot-matrices_cuda
+Matrix  : A-10000x10000.dat
+--------------------------------------
+
+[P1000 ]
+matrix dimensions: 10000 x 10000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.236151 seconds
+elapsed compute time   =   2.067773 seconds
+eigenvalue = -5.499262 found in 184 iterations
+
+[RTX3000]
+matrix dimensions: 10000 x 10000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.241586 seconds
+elapsed compute time   =   0.555915 seconds
+eigenvalue = -5.499262 found in 184 iterations
+
+[RTXA5000 - ml partition]
+matrix dimensions: 10000 x 10000; tolerance: 1.0000e-06; max iterations: 1000
+elapsed HDF5 read time =   0.336568 seconds
+elapsed compute time   =   0.347505 seconds
+eigenvalue = -5.499262 found in 184 iterations
+
+======================================
+ Done
+======================================

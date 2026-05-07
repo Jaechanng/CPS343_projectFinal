@@ -19,6 +19,3 @@ dot-matrices_cuda_stream
 *.ptx
 *.fatbin
 
-# Generated result files
-result*.txt
-dot-matrices_result.txt
