@@ -1,0 +1,994 @@
+add-matrices multiple-run output
+Generated: Thu 07 May 2026 06:00:53 PM EDT
+All matrix dimensions are greater than 100, so sample matrix values are not printed.
+
+============================================================
+Run 1
+Command: ./add-matrices 128 128 1 128
+Matrix: 128 rows x 128 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 1
+
+Matrix size: 128 rows x 128 cols (0.06 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.139 ms [OK]
+Streamed async chunk workflow:       0.056 ms [OK]
+Speedup: 2.49x
+
+============================================================
+Run 2
+Command: ./add-matrices 128 128 1 128
+Matrix: 128 rows x 128 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 2
+
+Matrix size: 128 rows x 128 cols (0.06 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.477 ms [OK]
+Streamed async chunk workflow:       0.118 ms [OK]
+Speedup: 4.04x
+
+============================================================
+Run 3
+Command: ./add-matrices 128 128 1 128
+Matrix: 128 rows x 128 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 3
+
+Matrix size: 128 rows x 128 cols (0.06 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.425 ms [OK]
+Streamed async chunk workflow:       0.128 ms [OK]
+Speedup: 3.32x
+
+============================================================
+Run 4
+Command: ./add-matrices 256 256 1 128
+Matrix: 256 rows x 256 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 1
+
+Matrix size: 256 rows x 256 cols (0.25 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.245 ms [OK]
+Streamed async chunk workflow:       0.170 ms [OK]
+Speedup: 1.44x
+
+============================================================
+Run 5
+Command: ./add-matrices 256 256 1 128
+Matrix: 256 rows x 256 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 2
+
+Matrix size: 256 rows x 256 cols (0.25 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.438 ms [OK]
+Streamed async chunk workflow:       0.185 ms [OK]
+Speedup: 2.36x
+
+============================================================
+Run 6
+Command: ./add-matrices 256 256 1 128
+Matrix: 256 rows x 256 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 3
+
+Matrix size: 256 rows x 256 cols (0.25 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.447 ms [OK]
+Streamed async chunk workflow:       0.197 ms [OK]
+Speedup: 2.27x
+
+============================================================
+Run 7
+Command: ./add-matrices 256 256 2 256
+Matrix: 256 rows x 256 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 1
+
+Matrix size: 256 rows x 256 cols (0.25 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.369 ms [OK]
+Streamed async chunk workflow:       0.170 ms [OK]
+Speedup: 2.18x
+
+============================================================
+Run 8
+Command: ./add-matrices 256 256 2 256
+Matrix: 256 rows x 256 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 2
+
+Matrix size: 256 rows x 256 cols (0.25 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.255 ms [OK]
+Streamed async chunk workflow:       0.151 ms [OK]
+Speedup: 1.68x
+
+============================================================
+Run 9
+Command: ./add-matrices 256 256 2 256
+Matrix: 256 rows x 256 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 3
+
+Matrix size: 256 rows x 256 cols (0.25 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.603 ms [OK]
+Streamed async chunk workflow:       0.222 ms [OK]
+Speedup: 2.71x
+
+============================================================
+Run 10
+Command: ./add-matrices 512 512 1 128
+Matrix: 512 rows x 512 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 1
+
+Matrix size: 512 rows x 512 cols (1.00 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.641 ms [OK]
+Streamed async chunk workflow:       1.391 ms [OK]
+Speedup: 0.46x
+
+============================================================
+Run 11
+Command: ./add-matrices 512 512 1 128
+Matrix: 512 rows x 512 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 2
+
+Matrix size: 512 rows x 512 cols (1.00 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.958 ms [OK]
+Streamed async chunk workflow:       1.008 ms [OK]
+Speedup: 0.95x
+
+============================================================
+Run 12
+Command: ./add-matrices 512 512 1 128
+Matrix: 512 rows x 512 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 3
+
+Matrix size: 512 rows x 512 cols (1.00 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.982 ms [OK]
+Streamed async chunk workflow:       0.604 ms [OK]
+Speedup: 1.63x
+
+============================================================
+Run 13
+Command: ./add-matrices 512 512 2 256
+Matrix: 512 rows x 512 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 1
+
+Matrix size: 512 rows x 512 cols (1.00 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 1.128 ms [OK]
+Streamed async chunk workflow:       0.497 ms [OK]
+Speedup: 2.27x
+
+============================================================
+Run 14
+Command: ./add-matrices 512 512 2 256
+Matrix: 512 rows x 512 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 2
+
+Matrix size: 512 rows x 512 cols (1.00 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.727 ms [OK]
+Streamed async chunk workflow:       0.477 ms [OK]
+Speedup: 1.52x
+
+============================================================
+Run 15
+Command: ./add-matrices 512 512 2 256
+Matrix: 512 rows x 512 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 3
+
+Matrix size: 512 rows x 512 cols (1.00 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.673 ms [OK]
+Streamed async chunk workflow:       0.470 ms [OK]
+Speedup: 1.43x
+
+============================================================
+Run 16
+Command: ./add-matrices 512 512 4 512
+Matrix: 512 rows x 512 cols
+Streams: 4
+Rows per chunk: 512
+Trial: 1
+
+Matrix size: 512 rows x 512 cols (1.00 MB per matrix)
+Streams demo: 4 streams, 512 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.969 ms [OK]
+Streamed async chunk workflow:       0.599 ms [OK]
+Speedup: 1.62x
+
+============================================================
+Run 17
+Command: ./add-matrices 512 512 4 512
+Matrix: 512 rows x 512 cols
+Streams: 4
+Rows per chunk: 512
+Trial: 2
+
+Matrix size: 512 rows x 512 cols (1.00 MB per matrix)
+Streams demo: 4 streams, 512 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.845 ms [OK]
+Streamed async chunk workflow:       0.586 ms [OK]
+Speedup: 1.44x
+
+============================================================
+Run 18
+Command: ./add-matrices 512 512 4 512
+Matrix: 512 rows x 512 cols
+Streams: 4
+Rows per chunk: 512
+Trial: 3
+
+Matrix size: 512 rows x 512 cols (1.00 MB per matrix)
+Streams demo: 4 streams, 512 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 0.841 ms [OK]
+Streamed async chunk workflow:       0.579 ms [OK]
+Speedup: 1.45x
+
+============================================================
+Run 19
+Command: ./add-matrices 1024 1024 1 128
+Matrix: 1024 rows x 1024 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 1
+
+Matrix size: 1024 rows x 1024 cols (4.00 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 2.436 ms [OK]
+Streamed async chunk workflow:       2.226 ms [OK]
+Speedup: 1.09x
+
+============================================================
+Run 20
+Command: ./add-matrices 1024 1024 1 128
+Matrix: 1024 rows x 1024 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 2
+
+Matrix size: 1024 rows x 1024 cols (4.00 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 3.200 ms [OK]
+Streamed async chunk workflow:       2.262 ms [OK]
+Speedup: 1.41x
+
+============================================================
+Run 21
+Command: ./add-matrices 1024 1024 1 128
+Matrix: 1024 rows x 1024 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 3
+
+Matrix size: 1024 rows x 1024 cols (4.00 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 2.678 ms [OK]
+Streamed async chunk workflow:       2.433 ms [OK]
+Speedup: 1.10x
+
+============================================================
+Run 22
+Command: ./add-matrices 1024 1024 2 256
+Matrix: 1024 rows x 1024 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 1
+
+Matrix size: 1024 rows x 1024 cols (4.00 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 2.417 ms [OK]
+Streamed async chunk workflow:       1.986 ms [OK]
+Speedup: 1.22x
+
+============================================================
+Run 23
+Command: ./add-matrices 1024 1024 2 256
+Matrix: 1024 rows x 1024 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 2
+
+Matrix size: 1024 rows x 1024 cols (4.00 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 2.479 ms [OK]
+Streamed async chunk workflow:       1.644 ms [OK]
+Speedup: 1.51x
+
+============================================================
+Run 24
+Command: ./add-matrices 1024 1024 2 256
+Matrix: 1024 rows x 1024 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 3
+
+Matrix size: 1024 rows x 1024 cols (4.00 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 3.725 ms [OK]
+Streamed async chunk workflow:       1.660 ms [OK]
+Speedup: 2.24x
+
+============================================================
+Run 25
+Command: ./add-matrices 1024 1024 4 512
+Matrix: 1024 rows x 1024 cols
+Streams: 4
+Rows per chunk: 512
+Trial: 1
+
+Matrix size: 1024 rows x 1024 cols (4.00 MB per matrix)
+Streams demo: 4 streams, 512 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 2.432 ms [OK]
+Streamed async chunk workflow:       1.846 ms [OK]
+Speedup: 1.32x
+
+============================================================
+Run 26
+Command: ./add-matrices 1024 1024 4 512
+Matrix: 1024 rows x 1024 cols
+Streams: 4
+Rows per chunk: 512
+Trial: 2
+
+Matrix size: 1024 rows x 1024 cols (4.00 MB per matrix)
+Streams demo: 4 streams, 512 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 2.252 ms [OK]
+Streamed async chunk workflow:       1.819 ms [OK]
+Speedup: 1.24x
+
+============================================================
+Run 27
+Command: ./add-matrices 1024 1024 4 512
+Matrix: 1024 rows x 1024 cols
+Streams: 4
+Rows per chunk: 512
+Trial: 3
+
+Matrix size: 1024 rows x 1024 cols (4.00 MB per matrix)
+Streams demo: 4 streams, 512 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 2.560 ms [OK]
+Streamed async chunk workflow:       1.852 ms [OK]
+Speedup: 1.38x
+
+============================================================
+Run 28
+Command: ./add-matrices 1024 1024 8 1024
+Matrix: 1024 rows x 1024 cols
+Streams: 8
+Rows per chunk: 1024
+Trial: 1
+
+Matrix size: 1024 rows x 1024 cols (4.00 MB per matrix)
+Streams demo: 8 streams, 1024 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 2.308 ms [OK]
+Streamed async chunk workflow:       2.198 ms [OK]
+Speedup: 1.05x
+
+============================================================
+Run 29
+Command: ./add-matrices 1024 1024 8 1024
+Matrix: 1024 rows x 1024 cols
+Streams: 8
+Rows per chunk: 1024
+Trial: 2
+
+Matrix size: 1024 rows x 1024 cols (4.00 MB per matrix)
+Streams demo: 8 streams, 1024 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 2.259 ms [OK]
+Streamed async chunk workflow:       2.184 ms [OK]
+Speedup: 1.03x
+
+============================================================
+Run 30
+Command: ./add-matrices 1024 1024 8 1024
+Matrix: 1024 rows x 1024 cols
+Streams: 8
+Rows per chunk: 1024
+Trial: 3
+
+Matrix size: 1024 rows x 1024 cols (4.00 MB per matrix)
+Streams demo: 8 streams, 1024 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 2.459 ms [OK]
+Streamed async chunk workflow:       2.262 ms [OK]
+Speedup: 1.09x
+
+============================================================
+Run 31
+Command: ./add-matrices 2048 2048 1 128
+Matrix: 2048 rows x 2048 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 1
+
+Matrix size: 2048 rows x 2048 cols (16.00 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 8.697 ms [OK]
+Streamed async chunk workflow:       9.414 ms [OK]
+Speedup: 0.92x
+
+============================================================
+Run 32
+Command: ./add-matrices 2048 2048 1 128
+Matrix: 2048 rows x 2048 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 2
+
+Matrix size: 2048 rows x 2048 cols (16.00 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 9.359 ms [OK]
+Streamed async chunk workflow:       8.890 ms [OK]
+Speedup: 1.05x
+
+============================================================
+Run 33
+Command: ./add-matrices 2048 2048 1 128
+Matrix: 2048 rows x 2048 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 3
+
+Matrix size: 2048 rows x 2048 cols (16.00 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 8.981 ms [OK]
+Streamed async chunk workflow:       8.733 ms [OK]
+Speedup: 1.03x
+
+============================================================
+Run 34
+Command: ./add-matrices 2048 2048 2 256
+Matrix: 2048 rows x 2048 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 1
+
+Matrix size: 2048 rows x 2048 cols (16.00 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 8.850 ms [OK]
+Streamed async chunk workflow:       6.433 ms [OK]
+Speedup: 1.38x
+
+============================================================
+Run 35
+Command: ./add-matrices 2048 2048 2 256
+Matrix: 2048 rows x 2048 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 2
+
+Matrix size: 2048 rows x 2048 cols (16.00 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 8.736 ms [OK]
+Streamed async chunk workflow:       6.132 ms [OK]
+Speedup: 1.42x
+
+============================================================
+Run 36
+Command: ./add-matrices 2048 2048 2 256
+Matrix: 2048 rows x 2048 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 3
+
+Matrix size: 2048 rows x 2048 cols (16.00 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 8.604 ms [OK]
+Streamed async chunk workflow:       7.499 ms [OK]
+Speedup: 1.15x
+
+============================================================
+Run 37
+Command: ./add-matrices 2048 2048 4 512
+Matrix: 2048 rows x 2048 cols
+Streams: 4
+Rows per chunk: 512
+Trial: 1
+
+Matrix size: 2048 rows x 2048 cols (16.00 MB per matrix)
+Streams demo: 4 streams, 512 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 8.865 ms [OK]
+Streamed async chunk workflow:       6.565 ms [OK]
+Speedup: 1.35x
+
+============================================================
+Run 38
+Command: ./add-matrices 2048 2048 4 512
+Matrix: 2048 rows x 2048 cols
+Streams: 4
+Rows per chunk: 512
+Trial: 2
+
+Matrix size: 2048 rows x 2048 cols (16.00 MB per matrix)
+Streams demo: 4 streams, 512 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 8.807 ms [OK]
+Streamed async chunk workflow:       6.541 ms [OK]
+Speedup: 1.35x
+
+============================================================
+Run 39
+Command: ./add-matrices 2048 2048 4 512
+Matrix: 2048 rows x 2048 cols
+Streams: 4
+Rows per chunk: 512
+Trial: 3
+
+Matrix size: 2048 rows x 2048 cols (16.00 MB per matrix)
+Streams demo: 4 streams, 512 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 8.713 ms [OK]
+Streamed async chunk workflow:       6.459 ms [OK]
+Speedup: 1.35x
+
+============================================================
+Run 40
+Command: ./add-matrices 2048 2048 8 1024
+Matrix: 2048 rows x 2048 cols
+Streams: 8
+Rows per chunk: 1024
+Trial: 1
+
+Matrix size: 2048 rows x 2048 cols (16.00 MB per matrix)
+Streams demo: 8 streams, 1024 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 8.676 ms [OK]
+Streamed async chunk workflow:       7.140 ms [OK]
+Speedup: 1.22x
+
+============================================================
+Run 41
+Command: ./add-matrices 2048 2048 8 1024
+Matrix: 2048 rows x 2048 cols
+Streams: 8
+Rows per chunk: 1024
+Trial: 2
+
+Matrix size: 2048 rows x 2048 cols (16.00 MB per matrix)
+Streams demo: 8 streams, 1024 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 8.657 ms [OK]
+Streamed async chunk workflow:       7.198 ms [OK]
+Speedup: 1.20x
+
+============================================================
+Run 42
+Command: ./add-matrices 2048 2048 8 1024
+Matrix: 2048 rows x 2048 cols
+Streams: 8
+Rows per chunk: 1024
+Trial: 3
+
+Matrix size: 2048 rows x 2048 cols (16.00 MB per matrix)
+Streams demo: 8 streams, 1024 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 9.242 ms [OK]
+Streamed async chunk workflow:       7.212 ms [OK]
+Speedup: 1.28x
+
+============================================================
+Run 43
+Command: ./add-matrices 4096 4096 1 128
+Matrix: 4096 rows x 4096 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 1
+
+Matrix size: 4096 rows x 4096 cols (64.00 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 35.987 ms [OK]
+Streamed async chunk workflow:       36.979 ms [OK]
+Speedup: 0.97x
+
+============================================================
+Run 44
+Command: ./add-matrices 4096 4096 1 128
+Matrix: 4096 rows x 4096 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 2
+
+Matrix size: 4096 rows x 4096 cols (64.00 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 35.534 ms [OK]
+Streamed async chunk workflow:       37.769 ms [OK]
+Speedup: 0.94x
+
+============================================================
+Run 45
+Command: ./add-matrices 4096 4096 1 128
+Matrix: 4096 rows x 4096 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 3
+
+Matrix size: 4096 rows x 4096 cols (64.00 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 34.313 ms [OK]
+Streamed async chunk workflow:       38.622 ms [OK]
+Speedup: 0.89x
+
+============================================================
+Run 46
+Command: ./add-matrices 4096 4096 2 256
+Matrix: 4096 rows x 4096 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 1
+
+Matrix size: 4096 rows x 4096 cols (64.00 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 36.041 ms [OK]
+Streamed async chunk workflow:       25.154 ms [OK]
+Speedup: 1.43x
+
+============================================================
+Run 47
+Command: ./add-matrices 4096 4096 2 256
+Matrix: 4096 rows x 4096 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 2
+
+Matrix size: 4096 rows x 4096 cols (64.00 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 35.930 ms [OK]
+Streamed async chunk workflow:       24.847 ms [OK]
+Speedup: 1.45x
+
+============================================================
+Run 48
+Command: ./add-matrices 4096 4096 2 256
+Matrix: 4096 rows x 4096 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 3
+
+Matrix size: 4096 rows x 4096 cols (64.00 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 34.977 ms [OK]
+Streamed async chunk workflow:       24.536 ms [OK]
+Speedup: 1.43x
+
+============================================================
+Run 49
+Command: ./add-matrices 4096 4096 4 512
+Matrix: 4096 rows x 4096 cols
+Streams: 4
+Rows per chunk: 512
+Trial: 1
+
+Matrix size: 4096 rows x 4096 cols (64.00 MB per matrix)
+Streams demo: 4 streams, 512 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 35.176 ms [OK]
+Streamed async chunk workflow:       25.924 ms [OK]
+Speedup: 1.36x
+
+============================================================
+Run 50
+Command: ./add-matrices 4096 4096 4 512
+Matrix: 4096 rows x 4096 cols
+Streams: 4
+Rows per chunk: 512
+Trial: 2
+
+Matrix size: 4096 rows x 4096 cols (64.00 MB per matrix)
+Streams demo: 4 streams, 512 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 34.864 ms [OK]
+Streamed async chunk workflow:       24.763 ms [OK]
+Speedup: 1.41x
+
+============================================================
+Run 51
+Command: ./add-matrices 4096 4096 4 512
+Matrix: 4096 rows x 4096 cols
+Streams: 4
+Rows per chunk: 512
+Trial: 3
+
+Matrix size: 4096 rows x 4096 cols (64.00 MB per matrix)
+Streams demo: 4 streams, 512 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 34.302 ms [OK]
+Streamed async chunk workflow:       24.726 ms [OK]
+Speedup: 1.39x
+
+============================================================
+Run 52
+Command: ./add-matrices 4096 4096 8 1024
+Matrix: 4096 rows x 4096 cols
+Streams: 8
+Rows per chunk: 1024
+Trial: 1
+
+Matrix size: 4096 rows x 4096 cols (64.00 MB per matrix)
+Streams demo: 8 streams, 1024 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 37.017 ms [OK]
+Streamed async chunk workflow:       26.740 ms [OK]
+Speedup: 1.38x
+
+============================================================
+Run 53
+Command: ./add-matrices 4096 4096 8 1024
+Matrix: 4096 rows x 4096 cols
+Streams: 8
+Rows per chunk: 1024
+Trial: 2
+
+Matrix size: 4096 rows x 4096 cols (64.00 MB per matrix)
+Streams demo: 8 streams, 1024 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 35.494 ms [OK]
+Streamed async chunk workflow:       26.612 ms [OK]
+Speedup: 1.33x
+
+============================================================
+Run 54
+Command: ./add-matrices 4096 4096 8 1024
+Matrix: 4096 rows x 4096 cols
+Streams: 8
+Rows per chunk: 1024
+Trial: 3
+
+Matrix size: 4096 rows x 4096 cols (64.00 MB per matrix)
+Streams demo: 8 streams, 1024 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 35.076 ms [OK]
+Streamed async chunk workflow:       27.045 ms [OK]
+Speedup: 1.30x
+
+============================================================
+Run 55
+Command: ./add-matrices 8192 8192 1 128
+Matrix: 8192 rows x 8192 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 1
+
+Matrix size: 8192 rows x 8192 cols (256.00 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 140.906 ms [OK]
+Streamed async chunk workflow:       157.866 ms [OK]
+Speedup: 0.89x
+
+============================================================
+Run 56
+Command: ./add-matrices 8192 8192 1 128
+Matrix: 8192 rows x 8192 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 2
+
+Matrix size: 8192 rows x 8192 cols (256.00 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 141.035 ms [OK]
+Streamed async chunk workflow:       153.429 ms [OK]
+Speedup: 0.92x
+
+============================================================
+Run 57
+Command: ./add-matrices 8192 8192 1 128
+Matrix: 8192 rows x 8192 cols
+Streams: 1
+Rows per chunk: 128
+Trial: 3
+
+Matrix size: 8192 rows x 8192 cols (256.00 MB per matrix)
+Streams demo: 1 streams, 128 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 139.606 ms [OK]
+Streamed async chunk workflow:       161.768 ms [OK]
+Speedup: 0.86x
+
+============================================================
+Run 58
+Command: ./add-matrices 8192 8192 2 256
+Matrix: 8192 rows x 8192 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 1
+
+Matrix size: 8192 rows x 8192 cols (256.00 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 142.005 ms [OK]
+Streamed async chunk workflow:       100.793 ms [OK]
+Speedup: 1.41x
+
+============================================================
+Run 59
+Command: ./add-matrices 8192 8192 2 256
+Matrix: 8192 rows x 8192 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 2
+
+Matrix size: 8192 rows x 8192 cols (256.00 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 142.110 ms [OK]
+Streamed async chunk workflow:       103.138 ms [OK]
+Speedup: 1.38x
+
+============================================================
+Run 60
+Command: ./add-matrices 8192 8192 2 256
+Matrix: 8192 rows x 8192 cols
+Streams: 2
+Rows per chunk: 256
+Trial: 3
+
+Matrix size: 8192 rows x 8192 cols (256.00 MB per matrix)
+Streams demo: 2 streams, 256 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 142.468 ms [OK]
+Streamed async chunk workflow:       103.542 ms [OK]
+Speedup: 1.38x
+
+============================================================
+Run 61
+Command: ./add-matrices 8192 8192 4 512
+Matrix: 8192 rows x 8192 cols
+Streams: 4
+Rows per chunk: 512
+Trial: 1
+
+Matrix size: 8192 rows x 8192 cols (256.00 MB per matrix)
+Streams demo: 4 streams, 512 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 143.554 ms [OK]
+Streamed async chunk workflow:       98.584 ms [OK]
+Speedup: 1.46x
+
+============================================================
+Run 62
+Command: ./add-matrices 8192 8192 4 512
+Matrix: 8192 rows x 8192 cols
+Streams: 4
+Rows per chunk: 512
+Trial: 2
+
+Matrix size: 8192 rows x 8192 cols (256.00 MB per matrix)
+Streams demo: 4 streams, 512 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 145.404 ms [OK]
+Streamed async chunk workflow:       97.615 ms [OK]
+Speedup: 1.49x
+
+============================================================
+Run 63
+Command: ./add-matrices 8192 8192 4 512
+Matrix: 8192 rows x 8192 cols
+Streams: 4
+Rows per chunk: 512
+Trial: 3
+
+Matrix size: 8192 rows x 8192 cols (256.00 MB per matrix)
+Streams demo: 4 streams, 512 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 140.276 ms [OK]
+Streamed async chunk workflow:       96.536 ms [OK]
+Speedup: 1.45x
+
+============================================================
+Run 64
+Command: ./add-matrices 8192 8192 8 1024
+Matrix: 8192 rows x 8192 cols
+Streams: 8
+Rows per chunk: 1024
+Trial: 1
+
+Matrix size: 8192 rows x 8192 cols (256.00 MB per matrix)
+Streams demo: 8 streams, 1024 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 142.366 ms [OK]
+Streamed async chunk workflow:       100.563 ms [OK]
+Speedup: 1.42x
+
+============================================================
+Run 65
+Command: ./add-matrices 8192 8192 8 1024
+Matrix: 8192 rows x 8192 cols
+Streams: 8
+Rows per chunk: 1024
+Trial: 2
+
+Matrix size: 8192 rows x 8192 cols (256.00 MB per matrix)
+Streams demo: 8 streams, 1024 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 144.107 ms [OK]
+Streamed async chunk workflow:       97.538 ms [OK]
+Speedup: 1.48x
+
+============================================================
+Run 66
+Command: ./add-matrices 8192 8192 8 1024
+Matrix: 8192 rows x 8192 cols
+Streams: 8
+Rows per chunk: 1024
+Trial: 3
+
+Matrix size: 8192 rows x 8192 cols (256.00 MB per matrix)
+Streams demo: 8 streams, 1024 rows per chunk
+
+Sequential memcpy + kernel + memcpy: 144.003 ms [OK]
+Streamed async chunk workflow:       101.290 ms [OK]
+Speedup: 1.42x
+

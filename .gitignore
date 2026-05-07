@@ -1,0 +1,24 @@
+# Compiled executables
+add-matrices
+dot-matrices_cuda
+dot-matrices_cuda_stream
+
+# Object files and build artifacts
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.exe
+*.out
+
+# CUDA compiler intermediates
+*.cubin
+*.ptx
+*.fatbin
+
+# Generated result files
+result*.txt
+dot-matrices_result.txt
