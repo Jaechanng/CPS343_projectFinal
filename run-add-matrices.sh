@@ -3,7 +3,7 @@ set -u
 
 BIN="./add-matrices"
 SRC="add-matrices.cu"
-OUT="add-matrices-result.txt"
+OUT="result1.txt"
 
 SIZES=(128 256 512 1024 2048 4096 8192)
 CONFIGS=(
