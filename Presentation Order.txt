@@ -1,0 +1,48 @@
+Presentation Order:
+
+Title:
+Increasing GPU Computation Efficiency by Overlapping Memory Data Transfer and Kernel Computation on Device
+
+Overview:
+In this presentation, I will explain why overlapping memory transfer and kernel computation is useful, introduce CUDA streams, explain how non-default streams make overlap possible, walk through example code, and compare performance results.
+
+Introduction:
+A basic GPU program usually performs:
+- Data transfer from CPU to GPU
+- Kernel computation on the GPU
+- Result transfer from GPU back to CPU
+
+The problem is that during memory transfers, the CPU or GPU may sit idle. CUDA streams help solve this by splitting data into chunks, so while one chunk is being transferred, another chunk can be computed.
+
+CUDA Streams Section:
+- Define CUDA stream
+- Explain default stream vs non-default streams
+- Explain synchronous vs asynchronous functions
+- Explain cudaMemcpy vs cudaMemcpyAsync
+- Explain why pinned memory is needed
+- Show a small basic code example
+
+Real Code Example:
+- Start from the class add-matrice-cuda.cu and add-matrices-stream.cu program
+- Explain what changed
+- Show the sequential implementation
+- Show the stream-based implementation
+- Explain how the data is split into chunks
+- Explain how each stream handles copy, kernel, and copy-back operations
+
+Results Section:
+- Show elapsed time comparison
+- result graph 
+- Show  Nsight Systems profiling output, the result
+- Explain whether overlap improved performance
+- Explain possible limitations, such as small data sizes, hardware limits, or transfer overhead
+
+Also show that project 4 code for dot-matrices is implemented using stream too
+- show the result graph
+- analysis
+
+Conclusion:
+- CUDA streams allow independent operations to run concurrently
+- cudaMemcpyAsync and pinned memory allow memory transfers to overlap with kernel execution
+- Overlapping transfer and computation can reduce GPU idle time
+- This improves throughput in high-performance computing applications
